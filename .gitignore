@@ -1,2 +1,23 @@
-venv/
-.idea
+# Python-specific ignores
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.lock
+*.egg-info/
+
+# System/IDE files
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# User-specific files
+.env
+
+# Output/Generated files
+output/
+*.png
+*.jpg
+*.csv
+*.xlsx
