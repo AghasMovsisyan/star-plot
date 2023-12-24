@@ -16,8 +16,8 @@ This project aims to analyze star data using Python.
 - `data/`: Directory containing dataset files.
   - `stars_dataset.csv`: CSV file containing star data.
   
-- `output/`: Stores output files
-  - `hr_diagram.png`: Png Picure HR Diagram ().
+- `output/`: Stores output files.
+  - `hr_diagram.png`: Png Picure HR Diagram.
 
 - ## How to Use
 
