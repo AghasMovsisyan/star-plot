@@ -4,14 +4,14 @@ This project aims to analyze star data using Python.
 
 ## Project Structure
 
-- `models/`: Directory containing modules for star classification and visualization.
-  - `__init__.py`: Initialization file indicating this directory is a package.
-  - `classification.py`: Module for star classification.
-  - `visualization.py`: Module for visualizing star data.
-
 - `src/`: Source directory.
-  - `__init__.py`: Initialization file for the source directory.
-  - `main.py`: Main script for analyzing star data.
+  - `star_type_classification/`: Package containing the star analysis scripts.
+    - `models/`: Directory containing classification and visualization modules.
+      - `__init__.py`: Initialization file for the models directory.
+      - `classification.py`: Module for star classification.
+      - `visualization.py`: Module for visualizing star data.
+    - `__init__.py`: Initialization file for the `star_type_classification` package.
+    - `train.py`: Script for training the star classification model.
 
 - `data/`: Directory containing dataset files.
   - `stars_dataset.csv`: CSV file containing star data.
@@ -19,13 +19,22 @@ This project aims to analyze star data using Python.
 ## How to Use
 
 1. **Star Classification**:
-    - The `models/classification.py` module provides functions for training classification models based on star data.
+    - The `src/star_type_classification/models/classification.py` module provides functions for training classification models based on star data.
 
 2. **Data Visualization**:
-    - Utilize the `models/visualization.py` module to create visualizations, such as HR diagrams, from star data.
+    - Utilize the `src/star_type_classification/models/visualization.py` module to create visualizations, such as HR diagrams, from star data.
 
-3. **Running the Analysis**:
-    - To run the star analysis, execute `python3 main.py` from within the `/src` directory.
+3. **Training the Model**:
+    - To train the star classification model, execute `python3 train.py ../data/stars_dataset.csv` from within the `/src/star_type_classification` directory.
+
+    Example:
+    ```bash
+    python3 train.py ../data/stars_dataset.csv
+    ```
+    This command will run the script for training the model using the provided dataset.
+
+4. **Model Performance**:
+    - After training, the model achieves an accuracy of 97.92% on the test dataset.
 
 ## Dependencies
 
@@ -36,6 +45,5 @@ This project aims to analyze star data using Python.
 
 1. Clone the repository.
 2. Install dependencies (`pip install -r requirements.txt` or `pipenv install`).
-3. Navigate to the `/src` directory.
-4. Execute the analysis using `python3 main.py`.
-
+3. Navigate to the `/src/star_type_classification` directory.
+4. Train the model using ` python3 train.py ../data/stars_dataset.csv`.
