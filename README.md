@@ -15,8 +15,11 @@ This project aims to analyze star data using Python.
 
 - `data/`: Directory containing dataset files.
   - `stars_dataset.csv`: CSV file containing star data.
+  
+- `output/`: Stores output files
+  - `hr_diagram.png`: Png Picure HR Diagram ().
 
-## How to Use
+- ## How to Use
 
 1. **Star Classification**:
     - The `src/star_type_classification/models/classification.py` module provides functions for training classification models based on star data.
